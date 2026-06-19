@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Phodii's Flower Pod</title>
+    <meta name="description" content="Browse our beautiful flower bouquets with prices in ZAR. Fresh flowers delivered across South Africa.">
+    <meta name="keywords" content="flower shop, flowers, bouquets, South Africa, roses, tulips, orchids">
+    <meta name="author" content="Phodisho Mongwai">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css_assets/mystyles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="products.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="enquiries.html">Inquiry</a></li>
+                <li><a href="contact_us.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <img src="images/PHODII-FLOWER-POD.jpg" alt="Phodii's Flower Pod Logo" height="150px">
+    </header>
+
+    <main>
+        <h1>Welcome to the flower pod</h1>
+        <p>A SWEETHEART'S FAVOURITE GIFT</p>
+        <p>Choose the bouquet of your dreams</p>
+
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <img src="images/salah-darwish-0tsdTCEadTE-unsplash.jpg" alt="Romantic red roses bouquet" height="200">
+                <h3>Romantic Roses</h3>
+                <p>A stunning bouquet of premium red roses, perfect for expressing love.</p>
+                <p class="price">R350</p>
+                <button class="btn-add" onclick="addToCart(1, 'Romantic Roses', 350)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/slava-6-12MR02ru0-unsplash.jpg" alt="Bright red and pink tulips" height="200">
+                <h3>Sunshine Tulips</h3>
+                <p>Bright and cheerful tulips that bring warmth to any space.</p>
+                <p class="price">R280</p>
+                <button class="btn-add" onclick="addToCart(2, 'Sunshine Tulips', 280)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/uljana-borodina-NFj6pEUdmpY-unsplash.jpg" alt="Elegant white and purple orchids" height="200">
+                <h3>Elegant Orchids</h3>
+                <p>Exotic and sophisticated orchids for a truly elegant statement.</p>
+                <p class="price">R420</p>
+                <button class="btn-add" onclick="addToCart(3, 'Elegant Orchids', 420)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/zoe-richardson-V_MV68oW3FE-unsplash.jpg" alt="Colorful spring daisies bouquet" height="200">
+                <h3>Springtime Daisies</h3>
+                <p>Fresh and vibrant daisies that capture the essence of spring.</p>
+                <p class="price">R220</p>
+                <button class="btn-add" onclick="addToCart(4, 'Springtime Daisies', 220)">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="cart-section">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items">
+                <p class="empty-cart">Your cart is empty.</p>
+            </div>
+            <div id="cart-total">
+                <p><strong>Total: R<span id="total-amount">0</span></strong></p>
+                <button class="btn-checkout" onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Phodisho Mongwai &copy; &trade;</p>
+        <p>Centurion, South Africa</p>
+    </footer>
+
+    <script src="js_assets/script.js"></script>
+</body>
+</html>
